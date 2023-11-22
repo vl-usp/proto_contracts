@@ -4,7 +4,7 @@
 // - protoc             v4.25.1
 // source: sso.proto
 
-package proto
+package proto_contracts
 
 import (
 	context "context"

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "github.com/vl-usp/auth_service/proto";
+option go_package = "github.com/vl-usp/proto_contracts";
 
 service Auth {
 	rpc Register(RegisterRequest) returns (RegisterResponse);
