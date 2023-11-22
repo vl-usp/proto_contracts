@@ -1,4 +1,4 @@
-module github.com/vl-usp/auth_service/proto
+module github.com/vl-usp/proto_contracts
 
 go 1.21.4
 
