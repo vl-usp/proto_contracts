@@ -10,19 +10,25 @@ service Auth {
 	rpc IsAdmin(IsAdminRequest) returns (IsAdminResponse);
 }
 
+message UUID {
+	string value = 1;
+}
+
 message RegisterRequest {
-	string email = 1;
-	string password = 2;
+	string username = 1;
+	string full_name = 2;
+	string email = 3;
+	string password = 4;
 }
 
 message RegisterResponse {
-	int64 user_id = 1;
+	UUID user_id = 1;
 }
 
 message LoginRequest {
-	string email = 1;
-	string password = 2;
-	int32 app_id = 3;
+	int32 app_id = 1;
+	string email = 2;
+	string password = 3;
 }
 
 message LoginResponse {
@@ -30,7 +36,7 @@ message LoginResponse {
 }
 
 message IsAdminRequest {
-	int64 user_id = 1;
+	UUID user_id = 1;
 }
 
 message IsAdminResponse {
