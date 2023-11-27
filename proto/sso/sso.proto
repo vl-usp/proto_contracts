@@ -23,7 +23,7 @@ message RegisterResponse {
 
 message LoginRequest {
 	int32 app_id = 1;
-	string email = 2;
+	string login = 2;
 	string password = 3;
 }
 
